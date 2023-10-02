@@ -1,5 +1,3 @@
-#!/bin/bash
-
 _ceph_daemon_completion() {
     local cur prev socket_path fsid
     COMPREPLY=()
@@ -14,7 +12,6 @@ _ceph_daemon_completion() {
         COMPREPLY=( $(compgen -W "${sockets}" -- ${cur}) )
     elif [[ $COMP_CWORD -ge 2 ]]; then
         local first_command_part="${COMP_WORDS[2]}"
-#        local partial_command=$(echo "${COMP_WORDS[@]:2}" | tr ' ' '|')
         local partial_command=$(echo "${COMP_WORDS[@]:2}")
         
         if [[ -z "$cur" ]]; then
