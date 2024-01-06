@@ -1,7 +1,7 @@
 # ceph-daemon-wrapper
 A wrapper for the command: `ceph daemon`
 
-This command requires quite a bit of typing, especially since Ceph 15 (Octopus) where the sockets are no longer in /var/run/ceph. This wrapper, especially the bash completion part, should simplify this.
+This command involves a considerable amount of typing, particularly since the dockerized Ceph 15 (Octopus) moved the sockets away from `/var/run/ceph`. This wrapper, with its focus on the bash completion part, should simplify the process.
 
 ## Installation
 
